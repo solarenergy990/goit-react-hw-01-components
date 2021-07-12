@@ -1,4 +1,18 @@
-profile {
-  background-color: tomato;
-  width: 250px;
+.profile {
+  margin-top: 35px;
+  background-color: azure;
+  max-width: 320px;
+}
+
+.avatar {
+  width: 90px;
+  border-radius: 100%;
+}
+
+.description {
+  padding: 40px 0px;
+}
+
+.name {
+  font-size: 45;
 }

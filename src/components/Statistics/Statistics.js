@@ -1,4 +1,5 @@
 import s from "./Statistics.module.css";
+import PropTypes from "prop-types";
 
 const Statistics = ({ title, stats }) => {
   return (
@@ -28,6 +29,17 @@ const Statistics = ({ title, stats }) => {
 
 const getRandom = (min, max) => {
   return Math.ceil(Math.random() * (max - min) + min);
+};
+
+Statistics.propTypes = {
+  title: PropTypes.string.isRequired,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    })
+  ),
 };
 
 export default Statistics;

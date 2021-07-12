@@ -1,0 +1,24 @@
+.transactionHistory {
+  margin-top: 35px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  border-collapse: collapse;
+  color: #646168;
+}
+
+th {
+  border-bottom: 3px solid #b7a7fc;
+  padding: 12px 64px;
+  text-align: left;
+}
+td {
+  padding: 10px 25px;
+}
+tr:nth-child(odd) {
+  background: white;
+}
+tr:nth-child(even) {
+  background: #b7a7fc;
+}

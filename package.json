@@ -47,5 +47,6 @@
   "lint-staged": {
     "*.{js,jsx}": "eslint --cache --fix",
     "*.{js,jsx,css,md,scss}": "prettier --write"
-  }
+  },
+  "homepage": "https://solarenergy990.github.io/goit-react-hw-01-components"
 }

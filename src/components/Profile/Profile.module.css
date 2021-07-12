@@ -13,6 +13,7 @@
 .avatar {
   width: 90px;
   border-radius: 100%;
+  background-color: rgb(255, 250, 250);
 }
 
 .description {

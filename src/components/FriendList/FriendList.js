@@ -1,4 +1,4 @@
-import FriendListItem from "../FriendListItem/FriendListItem";
+import FriendListItem from "./FriendListItem/FriendListItem";
 import s from "./FriendList.module.css";
 import PropTypes from "prop-types";
 
@@ -6,12 +6,10 @@ function FriendList({ friends }) {
   return (
     <ul className={s.friendList}>
       {friends.map((friend) => {
-        const { avatar, name, isOnline, id } = friend;
+        const { avatar, name, isOnline } = friend;
 
         return (
-          <li className={s.item} key={id}>
-            <FriendListItem avatar={avatar} name={name} isOnline={isOnline} />
-          </li>
+          <FriendListItem avatar={avatar} name={name} isOnline={isOnline} />
         );
       })}
     </ul>

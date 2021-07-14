@@ -16,7 +16,7 @@ const Statistics = ({ title, stats }) => {
               className={s.item}
               key={id}
               style={{
-                backgroundColor: `rgb(${randomColor()}, ${randomColor()}, ${randomColor()})`,
+                backgroundColor: randomColor(),
               }}
             >
               <span className={s.label}>{label}</span>

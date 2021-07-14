@@ -1,4 +1,4 @@
-import Friend from "../Friend/Friend";
+import FriendListItem from "../FriendListItem/FriendListItem";
 import s from "./FriendList.module.css";
 import PropTypes from "prop-types";
 
@@ -10,7 +10,7 @@ function FriendList({ friends }) {
 
         return (
           <li className={s.item} key={id}>
-            <Friend avatar={avatar} name={name} isOnline={isOnline} />
+            <FriendListItem avatar={avatar} name={name} isOnline={isOnline} />
           </li>
         );
       })}

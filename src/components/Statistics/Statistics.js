@@ -1,5 +1,6 @@
 import s from "./Statistics.module.css";
 import PropTypes from "prop-types";
+import randomColor from "./utils/get-random";
 
 const Statistics = ({ title, stats }) => {
   return (
@@ -15,10 +16,7 @@ const Statistics = ({ title, stats }) => {
               className={s.item}
               key={id}
               style={{
-                backgroundColor: `rgb(${getRandom(0, 255)}, ${getRandom(
-                  0,
-                  255
-                )}, ${getRandom(0, 255)})`,
+                backgroundColor: `rgb(${randomColor()}, ${randomColor()}, ${randomColor()})`,
               }}
             >
               <span className={s.label}>{label}</span>
@@ -29,10 +27,6 @@ const Statistics = ({ title, stats }) => {
       </ul>
     </section>
   );
-};
-
-const getRandom = (min, max) => {
-  return Math.ceil(Math.random() * (max - min) + min);
 };
 
 Statistics.propTypes = {
